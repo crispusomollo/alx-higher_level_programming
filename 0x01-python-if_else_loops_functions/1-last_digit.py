@@ -9,4 +9,3 @@ else:
     response = "and is 0"
 
 print(f"Last digit of {number :d} is {last_digit :d} {response}")
-
