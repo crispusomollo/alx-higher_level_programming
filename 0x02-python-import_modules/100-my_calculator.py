@@ -8,11 +8,11 @@ if __name__ == "__main__":
         exit(1)
 
     oper = argv[2]
-    fx = {"+": add, "-": sub, "*": mul, "/": div}
-    if oper not in fx:
-        print("Unknown operator. AVailable operators: +, -, * and /")
+    f = {"+": add, "-": sub, "*": mul, "/": div}
+    if oper not in f:
+        print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
 
     a = int(argv[1])
     b = int(argv[3])
-    print("{:d} {:s} {:d} = {:d}".format(a, oper, b, fx[oper](a, b)))
+    print("{:d} {:s} {:d} = {:d}".format(a, oper, b, f[oper](a, b)))
