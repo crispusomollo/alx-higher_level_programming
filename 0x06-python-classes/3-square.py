@@ -11,7 +11,6 @@ class Square:
             raise TypeError("size must be >= 0")
         self.__size = size
 
-
     def area(self):
         """Returns the squared value"""
         return self.__size ** 2
