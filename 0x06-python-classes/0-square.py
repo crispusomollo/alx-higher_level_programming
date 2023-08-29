@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 """My first python class"""
 
 
