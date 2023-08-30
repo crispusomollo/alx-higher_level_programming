@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Task"""
+"""Square that defines a square based on 3-square.py"""
 
 
 class Square:
