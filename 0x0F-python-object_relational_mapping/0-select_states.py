@@ -12,15 +12,10 @@ if __name__ == "__main__":
     #connect to the database
     connection = MySQLdb.connect(host="localhost", port=3306, charset="utf8",
             user=argv[1], passwd=argv[2], db=argv[3])
-
-#create cursor to execute queries using SQL
 cursor = connection.cursor()
 cursor.execute("SELECT * FROM states ORDER BY states.id ASC;")
 rows = cursor.fetchall()
-
 for row in rows:
     print(row)
-
-#Close the connection
 cursor.close()
 connection.close()
