@@ -18,9 +18,10 @@ def dbConnect():
             charset="utf8"
             )
     exe=link.cursor()
-    exe.execute(
-            "SELECT cities.id, cities.name, states.name from cities 
-            JOIN states WHERE states.id = cities.state_id;")
+    exe.execute("SELECT cities.id, cities.name, states.name\ 
+            from cities JOIN states\ 
+            WHERE states.id = cities.state_id\
+            ORDER BY cities.id ASC")
     link.commit()
     result=exe.fetchall()
     for res in result:
